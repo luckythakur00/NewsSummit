@@ -1,0 +1,110 @@
+/* .wave-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat-x;
+  background-size: 50% 100%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  opacity: 0.6;
+}
+
+.wave1 {
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 500 150" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M-4.22,73.18 C149.99,150.00 349.20,-50.00 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: %23333333;"></path></svg>');
+  animation: waveAnimation 15s -2s linear infinite;
+  z-index: 3;
+}
+
+.wave2 {
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 500 150" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M-4.22,73.18 C149.99,150.00 349.20,-50.00 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: %23555555;"></path></svg>');
+  animation: waveAnimation 18s -1s linear infinite;
+  z-index: 2;
+}
+
+.wave3 {
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 500 150" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M-4.22,73.18 C149.99,150.00 349.20,-50.00 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: %23777777;"></path></svg>');
+  animation: waveAnimation 20s 0s linear infinite;
+  z-index: 1;
+}
+
+@keyframes waveAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+} */
+
+
+
+
+
+
+
+/* waves.css */
+
+.wave-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Centers the element perfectly */
+  left: 0;
+  width: 100%;
+  height: 250px; /* Increased height for more pronounced waves */
+  overflow: hidden;
+  pointer-events: none;
+  /* Add a subtle gradient background to the container itself if you want more depth around the waves */
+  /* background: radial-gradient(ellipse at center, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 70%); */
+}
+
+.wave {
+  position: absolute;
+  bottom: 0; /* Align to the bottom of its container (wave-container) */
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat-x;
+  background-size: 50% 100%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  opacity: 0.8;
+}
+
+.wave1 {
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 500 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M-4.22,120 C149.99,200 349.20,0 500.00,100 L500.00,200 L-4.22,200 Z" style="stroke: none; fill: %232C2C2C;"></path></svg>'); /* Darker grey */
+  animation: waveAnimation 5s -3s linear infinite;
+  z-index: 3;
+}
+
+.wave2 {
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 500 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M-4.22,100 C149.99,180 349.20,-20 500.00,80 L500.00,200 L-4.22,200 Z" style="stroke: none; fill: %233A3A3A;"></path></svg>'); /* Medium dark grey */
+  animation: waveAnimation 5s -1s linear infinite;
+  z-index: 2;
+}
+
+.wave3 {
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 500 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M-4.22,80 C149.99,160 349.20,-40 500.00,60 L500.00,200 L-4.22,200 Z" style="stroke: none; fill: %234A4A4A;"></path></svg>'); /* Lighter dark grey */
+  animation: waveAnimation 25s 0s linear infinite;
+  z-index: 1;
+}
+
+@keyframes waveAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
