@@ -161,7 +161,8 @@
 // export default HomePage;
 
 
-import { Link } from 'lucide-react';
+// import { Link } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import vid from '../assets/Glowing Wave Design.gif';
 import UserJourny from './UserJourny';
 
@@ -180,8 +181,7 @@ const HomePage = () => {
                     </p>
                     <p className="text-lg text-white mb-8">Got a news topic? Verify it with just one click.</p>
                     <div className="flex justify-center">
-                        <button className="bg-purple-600 text-white px-8 py-3 hover:bg-purple-800 rounded-full transition-colors">Get Started</button>
-                        {/* <Link to={'/analyseNews'} className="h-10 w-32 bg-purple-600 text-white hover:bg-purple-800 rounded-full">Get Started</Link> */}
+                        <Link to={'/analyseNews'} className="bg-purple-600 text-white px-8 py-3 hover:bg-purple-800 rounded-full transition-colors" >Get Started</Link>
                     </div>
                 </div>
             </div>
